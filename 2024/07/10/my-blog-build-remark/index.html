@@ -157,7 +157,7 @@
       <div class="post-attach">
         <span class="post-pubtime">
           <i class="iconfont icon-updatetime mr-10" title="更新时间"></i>
-          2024-07-10 14:17:13
+          2024-07-10 17:56:06
         </span>
         
               <span class="post-tags">
@@ -179,26 +179,30 @@
           
       </div>
       <div class="markdown-body">
-        <p>###分享一下使用github page和hexo搭建blog的过程</p>
-<p>平台:linux（window也可以，但我是在linux上做的，所以就分享linux平台上blog的搭建过程啦）</p>
+        <p>分享一下使用github page和hexo搭建blog的过程</p>
+<p>平台:linux</p>
 <p>需要用到的工具:一个GitHub账号</p>
-<p>test pictures</p>
-<img src="/2024/07/10/my-blog-build-remark/directory_hexo.png" class="" title="目录结构">
+<p>简化来说，分为以下步骤</p>
+<ol>
+<li>在 github 新建一个名为 <github-username>.github.io 的 repo</li>
+<li>在 linux 平台先安装 nodejs：推荐用conda安装，再用 npm 命令安装 hexo</li>
+<li>初始化：hexo init my-blog</li>
+<li>生成web前端： hexo generate</li>
+<li>本地启动： hexo server （本地启动后可在本地查看网页，可用于检查修改）</li>
+<li>修改_config.yml下的deploy中的github账号信息，之后可以部署到github上： hexo deploy</li>
+<li>可以通过 http:&#x2F;&#x2F; <github-username>.github.io 访问你的网站啦</li>
+</ol>
+
       </div>
       
         <div class="prev-or-next">
           <div class="post-foot-next">
             
-              <a href="/2024/07/10/hello-world/" target="_self">
-                <i class="iconfont icon-chevronleft"></i>
-                <span>上一页</span>
-              </a>
-            
           </div>
           <div class="post-attach">
             <span class="post-pubtime">
               <i class="iconfont icon-updatetime mr-10" title="更新时间"></i>
-              2024-07-10 14:17:13
+              2024-07-10 17:56:06
             </span>
             
                   <span class="post-tags">
@@ -220,11 +224,6 @@
               
           </div>
           <div class="post-foot-prev">
-            
-              <a href="/2024/07/10/index/" target="_self">
-                <span>下一页</span>
-                <i class="iconfont icon-chevronright"></i>
-              </a>
             
           </div>
         </div>
