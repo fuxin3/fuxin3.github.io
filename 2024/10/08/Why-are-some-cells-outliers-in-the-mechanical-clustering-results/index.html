@@ -13,7 +13,7 @@
   
   <title>
     
-      archive_a: 2024/10 
+      为什么机械分群结果中有的细胞会离群？ 
       
       
       |
@@ -114,59 +114,148 @@
 
 
       <div class="flex-container">
-        <!-- 归档页，展示本站所有文章，按照年份降序归类，url形式：https://yoursite/archives/ -->
+        <!-- 文章详情页，展示文章具体内容，url形式：https://yoursite/文章标题/ -->
+<!-- 同时为「标签tag」，「朋友friend」，「分类categories」，「关于about」页面的承载页面，具体展示取决于page.type -->
 
-<!-- last: 按年份把文章分组，当前遍历到的年份 -->
-<!-- now: 当前遍历到的文章的发布年份 -->
 
-<div class="container archives">
-  <div class="post-list">
-    
-        <!-- 后续文章的发布年份呈现 -->
-        <div class="content-title">
-          <h2>
-            <span>2024</span>
-          </h2>
+  <!-- LaTex Display -->
+
+  
+    <script async type="text/javascript" src="/plugins/mathjax/tex-chtml.js"></script>
+  
+  <script>
+    MathJax = {
+      tex: {
+        inlineMath: [['$', '$'], ['\\(', '\\)']]
+      }
+    }
+  </script>
+
+
+
+
+
+  <!-- clipboard -->
+
+  
+    <script async type="text/javascript" src="/plugins/clipboard.min.js"></script>
+  
+  
+<script src="/js/codeCopy.js"></script>
+
+
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+  <!-- 文章内容页 url形式：https://yoursite/文章标题/ -->
+  <div class="container post-details" id="post-details">
+    <div class="post-content">
+      <div class="post-title">为什么机械分群结果中有的细胞会离群？</div>
+      <div class="post-attach">
+        <span class="post-pubtime">
+          <i class="iconfont icon-updatetime mr-10" title="更新时间"></i>
+          2024-10-08 14:38:47
+        </span>
+        
+              <span class="post-categories">
+                <i class="iconfont icon-bookmark" title="分类"></i>
+                
+                <span class="span--category">
+                  <a href="/categories/easy/" title="easy">
+                    <b>#</b> easy
+                  </a>
+                </span>
+                
+              </span>
+          
+              <span class="post-tags">
+                <i class="iconfont icon-tags mr-10" title="标签"></i>
+                
+                <span class="span--tag mr-8">
+                  <a href="/tags/scRNA-seq/" title="scRNA-seq">
+                    #scRNA-seq
+                  </a>
+                </span>
+                
+              </span>
+          
+      </div>
+      <div class="markdown-body">
+        <p>单细胞数据机械分群时常会出现的问题之一，在算法上聚为一群的细胞，在UMAP图中的位置却非常分散，如下图，cluster2的部分细胞混杂在cluster7，cluster0中。<br><img src="/2024/10/08/Why-are-some-cells-outliers-in-the-mechanical-clustering-results/umap_cluster_CX_F.png" alt="scRNA-seq样本分群示例"></p>
+<p>这种现象或可从<strong>降维</strong>的角度理解，虽然在二维平面看来cluster2的部分细胞混杂在cluster7，cluster0中，但在高维上cluster2的细胞是距离较近的一个整体。</p>
+<p>比如将天空中的每朵云看作一个细胞群，虽然我们抬头看时，云朵层层叠叠，互相混杂，但每朵云的真实距离其实可能很远。</p>
+
+      </div>
+      
+        <div class="prev-or-next">
+          <div class="post-foot-next">
+            
+              <a href="/2024/10/08/%E5%88%86%E6%9E%90%E7%BD%91%E7%AB%99-metascape/" target="_self">
+                <i class="iconfont icon-chevronleft"></i>
+                <span>上一页</span>
+              </a>
+            
+          </div>
+          <div class="post-attach">
+            <span class="post-pubtime">
+              <i class="iconfont icon-updatetime mr-10" title="更新时间"></i>
+              2024-10-08 14:38:47
+            </span>
+            
+                  <span class="post-categories">
+                    <i class="iconfont icon-bookmark" title="分类"></i>
+                    
+                    <span class="span--category">
+                      <a href="/categories/easy/" title="easy">
+                        <b>#</b> easy
+                      </a>
+                    </span>
+                    
+                  </span>
+              
+                  <span class="post-tags">
+                    <i class="iconfont icon-tags mr-10" title="标签"></i>
+                    
+                    <span class="span--tag mr-8">
+                      <a href="/tags/scRNA-seq/" title="scRNA-seq">
+                        #scRNA-seq
+                      </a>
+                    </span>
+                    
+                  </span>
+              
+          </div>
+          <div class="post-foot-prev">
+            
+          </div>
         </div>
       
-      <div class="post-item" title="为什么机械分群结果中有的细胞会离群？">
-        <div class="time-m-d">10-08</div>
-        <div class="title">
-          <a href="/2024/10/08/Why-are-some-cells-outliers-in-the-mechanical-clustering-results/">
-            <span>为什么机械分群结果中有的细胞会离群？</span>
-          </a>
-        </div>
-      </div>
+    </div>
     
-      <div class="post-item" title="分析网站:metascape">
-        <div class="time-m-d">10-08</div>
-        <div class="title">
-          <a href="/2024/10/08/%E5%88%86%E6%9E%90%E7%BD%91%E7%AB%99-metascape/">
-            <span>分析网站:metascape</span>
-          </a>
-        </div>
-      </div>
+
     
-      <div class="post-item" title="创建并使用sigularity images">
-        <div class="time-m-d">07-16</div>
-        <div class="title">
-          <a href="/2024/07/16/%E5%88%9B%E5%BB%BA%E5%B9%B6%E4%BD%BF%E7%94%A8sigularity-images/">
-            <span>创建并使用sigularity images</span>
-          </a>
-        </div>
-      </div>
-    
-      <div class="post-item" title="my-blog-build-remark">
-        <div class="time-m-d">07-10</div>
-        <div class="title">
-          <a href="/2024/07/10/my-blog-build-remark/">
-            <span>my-blog-build-remark</span>
-          </a>
-        </div>
+      <div class="comments-container">
+        
+
+
+
+
+
+
+
       </div>
     
   </div>
-</div>
+
 
         
 <div class="footer">
@@ -436,6 +525,24 @@
 
 
         
+  
+    <div class="share-icon tools-bar-item">
+      <a href="javascript: void(0)" id="share-icon">
+        <i class="iconfont iconshare"></i>
+      </a>
+      <div class="share-content hidden">
+        
+          <a class="share-item" href="https://twitter.com/intent/tweet?text=' + %E4%B8%BA%E4%BB%80%E4%B9%88%E6%9C%BA%E6%A2%B0%E5%88%86%E7%BE%A4%E7%BB%93%E6%9E%9C%E4%B8%AD%E6%9C%89%E7%9A%84%E7%BB%86%E8%83%9E%E4%BC%9A%E7%A6%BB%E7%BE%A4%EF%BC%9F + '&url=' + http%3A%2F%2Fexample.com%2F2024%2F10%2F08%2FWhy-are-some-cells-outliers-in-the-mechanical-clustering-results%2F + '" target="_blank" title="Twitter">
+            <i class="iconfont icon-twitter"></i>
+          </a>
+        
+        
+          <a class="share-item" href="https://www.facebook.com/sharer.php?u=http://example.com/2024/10/08/Why-are-some-cells-outliers-in-the-mechanical-clustering-results/" target="_blank" title="Facebook">
+            <i class="iconfont icon-facebooksquare"></i>
+          </a>
+        
+      </div>
+    </div>
   
   
 <script src="/js/shares.js"></script>
